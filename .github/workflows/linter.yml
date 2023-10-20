@@ -1,0 +1,30 @@
+name: Format and Lint
+
+on:
+  push:
+    branches:
+      - main
+      - stage
+  pull_request:
+    branches:
+      - main
+      - stage
+
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install yarn
+        run: npm install -g yarn
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run Eslint
+        run: npx eslint "src/**/*.{js,jsx}"
+
+      - name: Run Prettier
+        run: npx prettier --check "src/**/*.{js,jsx}"
