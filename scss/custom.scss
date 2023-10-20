@@ -1,0 +1,22 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Customes Here
+
+// green-primary
+// #fff1ce
+
+// orange-accent
+// #af5531
+
+// creame-secondary
+// #3f5e53
+
+$theme-colors: (
+    "primary": #fff1ce,
+    "secondary": #3f5e53,
+    "info": #af5531,
+);
+
+// Customs Stop
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
