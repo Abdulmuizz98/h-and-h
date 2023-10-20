@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - stage
+  pull_request:
+    branches:
+      - main
+      - stage
 
 jobs:
   super-lint:
