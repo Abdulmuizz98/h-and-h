@@ -1,5 +1,15 @@
+import Header from "./components/layout/Header";
+import Showcase from "./components/layout/Showcase";
+
 const App = () => {
-  return <div>This is my app but i want to test something with it</div>;
+  return (
+    <>
+      <div className="home-section h-full custom-bg">
+        <Header />
+        <Showcase />
+      </div>
+    </>
+  );
 };
 
 export default App;
