@@ -1,4 +1,17 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@font-face {
+  font-family: "Bigilla";
+  src: url("../src/assets/Bigilla.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Bigilla";
+  src: url("../src/assets/Bigilla-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 
 // Customes Here
 
@@ -10,13 +23,236 @@
 
 // creame-secondary
 // #3f5e53
+$primary: #fff1ce;
+$primary-rgb: 255 241 206;
+$secondary: #3f5e53;
+$info: #af5531;
+$info-rgb: 175 85 49;
+$body-color: $primary;
+$body-bg: $secondary;
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+$font-family-sans-serif: "Lato";
+$font-family-serif: "Bigilla";
 
 $theme-colors: (
-    "primary": #fff1ce,
-    "secondary": #3f5e53,
-    "info": #af5531,
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $info,
 );
+
+// a {
+//   color: $primary;
+//   text-decoration: none;
+// }
+
+// a:hover {
+//   color: $info;
+// }
+
+// $font-family-serif:
+
+$fs-1: 12px;
+$fs-2: 14px;
+$fs-3: 16px;
+$fs-4: 20px;
+$fs-5: 24px;
+$fs-6: 28px;
+
+$fs-md-1: 18px; // btn text/ nav links
+$fs-md-2: 20px; //for text
+$fs-md-3: 30px; // For Logo
+$fs-md-4: 50px; // For h2s
+$fs-md-5: 60px; // For Gilter
+
+// xl use 20 and 24 from small
+// xl use 30 from md
+$fs-xl-1: 20px;
+$fs-xl-2: 24px;
+$fs-xl-3: 30px;
+$fs-xl-4: 40px;
+$fs-xl-5: 44px;
+$fs-xl-6: 88px;
+$fs-xl-7: 100px;
+
+$smalls: (12, 14, 16, 20, 24, 28);
+
+@for $i from 1 through length($smalls) {
+  $fs: nth($smalls, $i);
+
+  .fs-sm-#{$i} {
+    font-size: #{$fs}px;
+  }
+}
+
+$mediums: (18, 20, 30, 50, 60);
+
+@for $i from 1 through length($mediums) {
+  $fs: nth($mediums, $i);
+
+  @media (min-width: 650px) {
+    .fs-md-#{$i} {
+      font-size: #{$fs}px;
+    }
+  }
+}
+
+$xlarges: (20, 24, 30, 40, 44, 88, 100);
+
+@for $i from 1 through length($xlarges) {
+  $fs: nth($xlarges, $i);
+
+  @media (min-width: 1200px) {
+    .fs-xl-#{$i} {
+      font-size: #{$fs}px;
+    }
+  }
+}
+
+body {
+  font-family: $font-family-sans-serif;
+}
+.ff-serif {
+  font-family: $font-family-serif;
+}
+
+.ff-sans {
+  font-family: $font-family-sans-serif;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+.custom-btn {
+  background-color: $info;
+  color: $primary;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  margin: 0;
+  text-decoration: none;
+}
+.custom-bg {
+  background: $secondary, url("../src//assets/pattern_bgd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-section {
+  height: 50vh;
+}
+
+.custom-gap {
+  gap: 32px;
+}
+
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.bord {
+  border: 2px solid red;
+}
+.w-150 {
+  width: 150px;
+}
+.w-100 {
+  width: 100%;
+}
+
+.pt-116 {
+  padding-top: 116px;
+}
+
+.start-21 {
+  left: 21px;
+}
+
+.top-18 {
+  top: 18px;
+}
+
+.h-vw {
+  min-height: 525px;
+  height: 100vw;
+}
+
+ul.rm-mb {
+  margin-bottom: 0;
+}
+
+.bg-custom-secondary {
+  background-color: $secondary;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.z-2000 {
+  z-index: 2000;
+}
+
+.mt-72 {
+  margin-top: 72px;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.bgd-clip {
+  background-color: $secondary;
+}
+
+.h-full {
+  height: 100%;
+}
+.h-500 {
+  height: 600px;
+}
+.bgd-hero {
+  height: 350px;
+  width: 220px;
+  background-image: url("../src/assets/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 5px solid $info;
+  border-radius: 50%;
+  z-index: -10;
+}
+
+@media (min-width: 650px) {
+  .bgd-hero {
+    height: 550px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .h-xl-995 {
+    height: 995px;
+  }
+  .pt-xl-434 {
+    padding-top: 434px;
+  }
+  .bgd-hero {
+    height: 791px;
+    width: 485px;
+  }
+}
 
 // Customs Stop
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
