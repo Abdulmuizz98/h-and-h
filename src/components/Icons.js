@@ -66,3 +66,33 @@ export const HhTwitter = () => (
     />
   </svg>
 );
+
+export const HhHamburger = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M2 12H14V10.6667H2V12ZM2 8.66667H14V7.33333H2V8.66667ZM2 4V5.33333H14V4H2Z"
+      fill="#FFF1CE"
+    />
+  </svg>
+);
+
+export const HhClose = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12.6667 4.27325L11.7267 3.33325L8.00004 7.05992L4.27337 3.33325L3.33337 4.27325L7.06004 7.99992L3.33337 11.7266L4.27337 12.6666L8.00004 8.93992L11.7267 12.6666L12.6667 11.7266L8.94004 7.99992L12.6667 4.27325Z"
+      fill="#FFF1CE"
+    />
+  </svg>
+);
