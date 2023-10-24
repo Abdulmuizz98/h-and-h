@@ -1,13 +1,17 @@
+import AboutUs from "./components/layout/AboutUs";
+import Category from "./components/layout/Category";
 import Header from "./components/layout/Header";
 import Showcase from "./components/layout/Showcase";
 
 const App = () => {
   return (
     <>
-      <div className="home-section h-full custom-bg">
+      <section id="home" className="home-section h-full custom-bg">
         <Header />
         <Showcase />
-      </div>
+      </section>
+      <AboutUs />
+      <Category />
     </>
   );
 };
