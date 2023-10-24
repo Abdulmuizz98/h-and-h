@@ -143,8 +143,26 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.center-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .of-cover {
   object-fit: cover;
+}
+.custom-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $primary;
+  width: 465px;
+  color: $primary;
+}
+.custom-message {
+  background-color: transparent;
+  border: 1px solid $primary;
+  width: 465px;
+  color: $primary;
 }
 .custom-brad-1 {
   border-top-right-radius: 200px;
@@ -153,6 +171,18 @@ body {
 .custom-brad-2 {
   border-bottom-right-radius: 200px;
   border-bottom-left-radius: 200px;
+}
+.custom-brad-3 {
+  border-top-right-radius: 500px;
+  border-top-left-radius: 500px;
+}
+.custom-brad-4 {
+  border-bottom-right-radius: 500px;
+  border-bottom-left-radius: 500px;
+}
+
+.bord-top {
+  border-top: 2px solid $primary;
 }
 
 .start-21 {
@@ -178,13 +208,19 @@ body {
 .mt-50 {
   margin-top: 50px;
 }
+.mt-56 {
+  margin-top: 56px;
+}
 
 // PADDINGS
 .py-50 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
+.px-35 {
+  padding-right: 35px;
+  padding-left: 35px;
+}
 .pt-116 {
   padding-top: 116px;
 }
@@ -196,20 +232,38 @@ body {
 .w-100 {
   width: 100%;
 }
+.w-162 {
+  width: 162px;
+}
 
+.w-465 {
+  width: 465px;
+}
 .w-182 {
   width: 182px;
 }
 .w-180 {
   width: 180px;
 }
+.w-unset {
+  width: unset;
+}
 
 // HEIGHTS
+.h-40 {
+  height: 40px;
+}
 .h-260 {
   height: 260px;
 }
 .h-107 {
   height: 107px;
+}
+.h-123 {
+  height: 123px;
+}
+.h-175 {
+  height: 175px;
 }
 .h-281 {
   height: 281px;
@@ -310,6 +364,9 @@ ul.rm-mb {
   }
 }
 @media (min-width: 1400px) {
+  #custom-align {
+    text-align: left !important;
+  }
   .custom-col {
     border: 1px solid $info;
     border-top-right-radius: 500px;
@@ -317,14 +374,26 @@ ul.rm-mb {
     width: 492px;
     height: 349px;
   }
+  .w-xxl-490 {
+    width: 490px;
+  }
   .h-xxl-684 {
     height: 684px;
+  }
+  .h-xxl-337 {
+    height: 337px;
+  }
+  .w-xxl-500 {
+    width: 500px;
   }
   .w-xxl-520 {
     width: 520px;
   }
   .h-xxl-762 {
     height: 762px;
+  }
+  .mt-xxl-150 {
+    margin-top: 150;
   }
   .h-xxl-776 {
     height: 762px;

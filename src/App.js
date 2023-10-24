@@ -1,5 +1,7 @@
 import AboutUs from "./components/layout/AboutUs";
 import Category from "./components/layout/Category";
+import ContactUs from "./components/layout/ContactUs";
+import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import Showcase from "./components/layout/Showcase";
 
@@ -12,6 +14,8 @@ const App = () => {
       </section>
       <AboutUs />
       <Category />
+      <ContactUs />
+      <Footer />
     </>
   );
 };
