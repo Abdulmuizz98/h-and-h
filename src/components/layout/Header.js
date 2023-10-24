@@ -20,7 +20,7 @@ const Header = () => {
         </button>
 
         <div className="nav-menu-lg ms-auto d-none d-lg-block">
-          <ul className="nav-links d-flex custom-gap justify-content-between list-unstyled rm-mb fw-300 fs-sm-5">
+          <ul className="nav-links d-flex custom-gap justify-content-bentween list-unstyled rm-mb fw-300 fs-sm-5">
             <li>
               <a href="#home">Home</a>
             </li>

@@ -2,7 +2,7 @@ import Button from "../Button";
 
 const Showcase = () => {
   return (
-    <div className="showcase">
+    <section className="showcase">
       <div className="container">
         <div className="position-relative h-vw h-xl-995">
           <div className="text-center position-center w-100">
@@ -18,7 +18,7 @@ const Showcase = () => {
           <div className="bgd-hero position-center"></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
