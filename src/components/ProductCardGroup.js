@@ -8,7 +8,7 @@ const ProductCardGroup = ({ cardData }) => {
         cardData.map((item, index) => (
           <div
             key={index}
-            className={`d-flex m-0 justify-content-center ${item.classes}`}
+            className={`d-flex m-0 p-0 justify-content-center ${item.classes}`}
           >
             <ProductCard src={item.src} title={item.title} />
           </div>

@@ -35,7 +35,7 @@ const AboutUs = () => {
     <section id="about-us">
       <div className="container">
         <h2 className="mt-50 mt-md-100 mb-5 ff-serif fw-bold fs-sm-5 fs-md-5 fs-xl-6 text-center">
-          About us
+          About Us
         </h2>
         <div className="row g-5 ">
           <div className="col-xxl d-flex justify-content-center justify-content-xxl-start">
@@ -78,7 +78,7 @@ const AboutUs = () => {
             cardData.map((item, index) => (
               <div
                 key={index}
-                className={`col-xxl d-flex justify-content-center ${item.classes}`}
+                className={`col-xxl p-0 d-flex justify-content-center ${item.classes}`}
               >
                 <Card
                   src={item.src}
