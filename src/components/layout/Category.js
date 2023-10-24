@@ -8,7 +8,7 @@ import ProductCardGroup from "../ProductCardGroup";
 
 const cardDataOne = [
   {
-    classes: "justify-content-xxl-start mb-3 mb-md-5",
+    classes: "justify-content-xxl-start mb-5",
     src: ringOne,
     title: "Ring",
   },
@@ -21,7 +21,7 @@ const cardDataOne = [
 
 const cardDataTwo = [
   {
-    classes: "justify-content-xxl-end mb-3 mb-md-5",
+    classes: "justify-content-xxl-end mb-5",
     src: earringsOne,
     title: "Earrings",
   },
@@ -39,7 +39,7 @@ const Category = () => {
         <h2 className="mt-50 mt-md-100 mb-5 ff-serif fw-bold fs-sm-5 fs-md-5 fs-xl-6 text-center">
           Category
         </h2>
-        <div className="row g-3 g-md-5 h-xxl-776">
+        <div className="row g-5 h-xxl-776">
           <div className="col-xxl">
             <ProductCardGroup cardData={cardDataOne} />
           </div>
