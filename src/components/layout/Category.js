@@ -5,6 +5,7 @@ import fullSet from "../../assets/full_set.png";
 import model from "../../assets/model.png";
 
 import ProductCardGroup from "../ProductCardGroup";
+import Button from "../Button";
 
 const cardDataOne = [
   {
@@ -55,6 +56,13 @@ const Category = () => {
           <div className="col-xxl">
             <ProductCardGroup cardData={cardDataTwo} />
           </div>
+        </div>
+        <div className="text-center mt-50 mt-md-100 w-100">
+          <p className="p-4 p-lg-5 m-0 fw-300 fs-sm-3 fs-md-2 fs-xl-3">
+            “Fine jewelry is worth more than an accessory, it’s an expression of
+            the extraordinary in life.”
+          </p>
+          <Button value="Discover now" classes="fs-sm-1 fs-md-1 fs-xl-2" />
         </div>
       </div>
     </section>
