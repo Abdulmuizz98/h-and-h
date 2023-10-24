@@ -34,7 +34,7 @@ const AboutUs = () => {
   return (
     <section id="about-us">
       <div className="container">
-        <h2 className="mt-100 mb-5 ff-serif fw-bold fs-sm-5 fs-md-5 fs-xl-6 text-center">
+        <h2 className="mt-50 mt-md-100 mb-5 ff-serif fw-bold fs-sm-5 fs-md-5 fs-xl-6 text-center">
           About us
         </h2>
         <div className="row g-5 ">
@@ -70,7 +70,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="container">
-        <h2 className="mt-50 mt-md-100  ff-serif fw-bold fs-sm-5 fs-md-5 fs-xl-6 text-center">
+        <h2 className="mt-50 mt-md-100 ff-serif fw-bold fs-sm-5 fs-md-5 fs-xl-6 text-center">
           Why Choose Us
         </h2>
         <div className="row g-5 m-0 h-xxl-684 justify-content-between">
