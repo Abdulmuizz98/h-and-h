@@ -15,14 +15,6 @@
 
 // Customes Here
 
-// green-primary
-// #fff1ce
-
-// orange-accent
-// #af5531
-
-// creame-secondary
-// #3f5e53
 $primary: #fff1ce;
 $primary-rgb: 255 241 206;
 $secondary: #3f5e53;
@@ -42,17 +34,6 @@ $theme-colors: (
   "secondary": $secondary,
   "info": $info,
 );
-
-// a {
-//   color: $primary;
-//   text-decoration: none;
-// }
-
-// a:hover {
-//   color: $info;
-// }
-
-// $font-family-serif:
 
 $fs-1: 12px;
 $fs-2: 14px;
@@ -111,9 +92,6 @@ $xlarges: (20, 24, 30, 40, 44, 88, 100);
   }
 }
 
-body {
-  font-family: $font-family-sans-serif;
-}
 .ff-serif {
   font-family: $font-family-serif;
 }
@@ -125,6 +103,20 @@ body {
 .fw-300 {
   font-weight: 300;
 }
+
+// CUSTOMS
+
+body {
+  font-family: $font-family-sans-serif;
+}
+.bord {
+  border: 1px solid $info;
+}
+
+.bord-light {
+  border: 1px solid $primary;
+}
+
 .custom-btn {
   background-color: $info;
   color: $primary;
@@ -141,35 +133,26 @@ body {
   background-position: center;
 }
 
-.home-section {
-  height: 50vh;
-}
-
 .custom-gap {
   gap: 32px;
 }
 
-.my-40 {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.py-50 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.of-cover {
+  object-fit: cover;
 }
-.bord {
-  border: 2px solid red;
+.custom-brad-1 {
+  border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
 }
-.w-150 {
-  width: 150px;
-}
-.w-100 {
-  width: 100%;
-}
-
-.pt-116 {
-  padding-top: 116px;
+.custom-brad-2 {
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
 }
 
 .start-21 {
@@ -180,6 +163,63 @@ body {
   top: 18px;
 }
 
+// MARGINS
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+.mt-72 {
+  margin-top: 72px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+
+// PADDINGS
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pt-116 {
+  padding-top: 116px;
+}
+
+// WIDTHS
+.w-150 {
+  width: 150px;
+}
+.w-100 {
+  width: 100%;
+}
+
+.w-182 {
+  width: 182px;
+}
+.w-180 {
+  width: 180px;
+}
+
+// HEIGHTS
+.h-260 {
+  height: 260px;
+}
+.h-107 {
+  height: 107px;
+}
+.h-281 {
+  height: 281px;
+}
+.h-full {
+  height: 100%;
+}
+.h-500 {
+  height: 600px;
+}
 .h-vw {
   min-height: 525px;
   height: 100vw;
@@ -192,34 +232,8 @@ ul.rm-mb {
 .bg-custom-secondary {
   background-color: $secondary;
 }
-
-.position-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.z-2000 {
-  z-index: 2000;
-}
-
-.mt-72 {
-  margin-top: 72px;
-}
-
-.opacity-1 {
-  opacity: 1;
-}
-
 .bgd-clip {
   background-color: $secondary;
-}
-
-.h-full {
-  height: 100%;
-}
-.h-500 {
-  height: 600px;
 }
 .bgd-hero {
   height: 350px;
@@ -238,8 +252,19 @@ ul.rm-mb {
     height: 550px;
     width: 350px;
   }
+  .w-md-270 {
+    width: 270px;
+  }
+  .h-md-400 {
+    height: 400px;
+  }
+  .h-md-150 {
+    height: 150px;
+  }
+  .mt-md-100 {
+    margin-top: 100px;
+  }
 }
-
 @media (min-width: 992px) {
   .h-xl-995 {
     height: 995px;
@@ -252,7 +277,62 @@ ul.rm-mb {
     width: 485px;
   }
 }
+@media (min-width: 1200px) {
+  .w-xl-361 {
+    width: 361px;
+  }
+  .h-xl-572 {
+    height: 572px;
+  }
+  .w-xl-344 {
+    width: 344px;
+  }
+  .h-xl-476 {
+    height: 476px;
+  }
+  .h-xl-215 {
+    height: 215px;
+  }
+  .py-xl-27 {
+    padding-top: 27px;
+    padding-bottom: 27.18px;
+  }
+  .px-xl-17 {
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+  .pt-xl-21 {
+    padding-top: 21px;
+  }
+  .px-xl-24 {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+@media (min-width: 1400px) {
+  .custom-col {
+    border: 1px solid $info;
+    border-top-right-radius: 500px;
+    border-top-left-radius: 500px;
+    width: 492px;
+    height: 349px;
+  }
+  .h-xxl-684 {
+    height: 684px;
+  }
+  .w-xxl-520 {
+    width: 520px;
+  }
+  .h-xxl-762 {
+    height: 762px;
+  }
+  .h-xxl-776 {
+    height: 762px;
+  }
+  .lh-1 {
+    line-height: 1;
+  }
+}
 
 // Customs Stop
-
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
