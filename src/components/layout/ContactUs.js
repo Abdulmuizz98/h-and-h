@@ -4,7 +4,7 @@ import Form from "../Form";
 
 const ContactUs = () => {
   return (
-    <div className="contact-us">
+    <div id="contact">
       <div className="container">
         <h2 className="mt-50 mt-md-100 mb-5 ff-serif fw-bold fs-sm-5 fs-md-5 fs-xl-6 text-center">
           Contact Us

@@ -126,11 +126,30 @@ body {
   margin: 0;
   text-decoration: none;
 }
+.custom-btn:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 1px 3px black;
+}
+
+svg:hover > path:first-child,
+svg:hover > g > path {
+  fill: lighten($info, 5%);
+  stroke: lighten($info, 5%);
+}
+
+svg:hover > path {
+  // fill: lighten($info, 5%);
+  stroke: lighten($info, 5%);
+}
 .custom-bg {
-  background: $secondary, url("../src//assets/pattern_bgd.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../src//assets/pattern_bgd.png");
+  background-size: 100vw max(100vw, 500px);
+  background-position: 0 0;
+}
+.bgd-clip {
+  background: url("../src/assets/pattern_bgd.png"), $secondary;
+  background-size: 100vw max(100vw, 500px);
+  background-position: 0 0;
 }
 
 .custom-gap {
@@ -155,13 +174,13 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid $primary;
-  width: 465px;
+  width: 100%;
   color: $primary;
 }
 .custom-message {
   background-color: transparent;
   border: 1px solid $primary;
-  width: 465px;
+  width: 100%;
   color: $primary;
 }
 .custom-brad-1 {
@@ -283,11 +302,11 @@ ul.rm-mb {
   margin-bottom: 0;
 }
 
-.bg-custom-secondary {
-  background-color: $secondary;
+.z-second {
+  z-index: 300000;
 }
-.bgd-clip {
-  background-color: $secondary;
+.z-first {
+  z-index: 200000;
 }
 .bgd-hero {
   height: 350px;
@@ -300,7 +319,21 @@ ul.rm-mb {
   border-radius: 50%;
   z-index: -10;
 }
+.bg-custom-secondary {
+  background: $secondary;
+}
 
+@media (min-width: 576px) {
+  .w-md-465 {
+    width: 465px;
+  }
+  .custom-input {
+    width: 465px;
+  }
+  .custom-message {
+    width: 465px;
+  }
+}
 @media (min-width: 650px) {
   .bgd-hero {
     height: 550px;
@@ -364,6 +397,12 @@ ul.rm-mb {
   }
 }
 @media (min-width: 1400px) {
+  .custom-bg {
+    background-size: 100vw;
+  }
+  .bgd-clip {
+    background-size: 100vw;
+  }
   #custom-align {
     text-align: left !important;
   }
@@ -376,6 +415,7 @@ ul.rm-mb {
   }
   .w-xxl-490 {
     width: 490px;
+    max-width: 490px;
   }
   .h-xxl-684 {
     height: 684px;

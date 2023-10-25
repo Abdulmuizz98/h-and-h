@@ -12105,11 +12105,31 @@ body {
   text-decoration: none;
 }
 
+.custom-btn:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 1px 3px black;
+}
+
+svg:hover > path:first-child,
+svg:hover > g > path {
+  fill: #c35f37;
+  stroke: #c35f37;
+}
+
+svg:hover > path {
+  stroke: #c35f37;
+}
+
 .custom-bg {
-  background: #3f5e53, url("../src//assets/pattern_bgd.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../src//assets/pattern_bgd.png");
+  background-size: 100vw max(100vw, 500px);
+  background-position: 0 0;
+}
+
+.bgd-clip {
+  background: url("../src/assets/pattern_bgd.png"), #3f5e53;
+  background-size: 100vw max(100vw, 500px);
+  background-position: 0 0;
 }
 
 .custom-gap {
@@ -12138,14 +12158,14 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff1ce;
-  width: 465px;
+  width: 100%;
   color: #fff1ce;
 }
 
 .custom-message {
   background-color: transparent;
   border: 1px solid #fff1ce;
-  width: 465px;
+  width: 100%;
   color: #fff1ce;
 }
 
@@ -12285,12 +12305,12 @@ ul.rm-mb {
   margin-bottom: 0;
 }
 
-.bg-custom-secondary {
-  background-color: #3f5e53;
+.z-second {
+  z-index: 300000;
 }
 
-.bgd-clip {
-  background-color: #3f5e53;
+.z-first {
+  z-index: 200000;
 }
 
 .bgd-hero {
@@ -12305,6 +12325,21 @@ ul.rm-mb {
   z-index: -10;
 }
 
+.bg-custom-secondary {
+  background: #3f5e53;
+}
+
+@media (min-width: 576px) {
+  .w-md-465 {
+    width: 465px;
+  }
+  .custom-input {
+    width: 465px;
+  }
+  .custom-message {
+    width: 465px;
+  }
+}
 @media (min-width: 650px) {
   .bgd-hero {
     height: 550px;
@@ -12368,6 +12403,12 @@ ul.rm-mb {
   }
 }
 @media (min-width: 1400px) {
+  .custom-bg {
+    background-size: 100vw;
+  }
+  .bgd-clip {
+    background-size: 100vw;
+  }
   #custom-align {
     text-align: left !important;
   }
@@ -12380,6 +12421,7 @@ ul.rm-mb {
   }
   .w-xxl-490 {
     width: 490px;
+    max-width: 490px;
   }
   .h-xxl-684 {
     height: 684px;
