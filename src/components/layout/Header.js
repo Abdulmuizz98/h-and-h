@@ -1,14 +1,34 @@
+import { useEffect } from "react";
 import { HhHamburger, HhClose } from "../Icons";
 
 const Header = () => {
+  useEffect(() => {
+    toggleNavBgd();
+  }, []);
+
+  const toggleNavBgd = () => {
+    const navbar = document.querySelector(".header");
+    const home = document.querySelector(".home-section");
+
+    const homeHeight = home.clientHeight;
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > homeHeight) {
+        navbar.classList.add("bg-custom-secondary");
+      } else {
+        navbar.classList.remove("bg-custom-secondary");
+      }
+    });
+  };
+
   const toggleNavMenu = () => {
     const navMenuSmall = document.querySelector(".nav-menu-sm");
     navMenuSmall.classList.toggle("d-none");
   };
   return (
-    <nav className="header py-3 fixed-top bgd-clip opacity-1 ">
+    <nav className="header py-3 fixed-top bgd-clip opacity-1 z-first">
       <div className="container d-flex position-relative align-items-center">
-        <a href="#" className="ff-serif fs-sm-4 fs-md-3 fs-xl-4 fw-bold">
+        <a href="/" className="ff-serif fs-sm-4 fs-md-3 fs-xl-4 fw-bold">
           H&H Jewels
         </a>
         <button
