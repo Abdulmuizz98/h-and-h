@@ -4,8 +4,8 @@ import earringsTwo from "../../assets/earrings_2.png";
 import ringsEarrings from "../../assets/rings_earrings.png";
 import pendantOne from "../../assets/pendant_1.png";
 
-import Car
-import Frame from "../Frame"d from "../Card";
+import Card from "../Card";
+import Frame from "../Frame";
 
 const cardData = [
   {
