@@ -6,6 +6,7 @@ import model from "../../assets/model.png";
 
 import ProductCardGroup from "../ProductCardGroup";
 import Button from "../Button";
+import Frame from "../Frame";
 
 const cardDataOne = [
   {
@@ -45,13 +46,19 @@ const Category = () => {
             <ProductCardGroup cardData={cardDataOne} />
           </div>
           <div className="col-xxl d-flex justify-content-center justify-content-xxl-center">
-            <figure className="w-182 h-281 w-md-270 h-md-400 w-xxl-520 h-xxl-762 bord-l custom-brad-1">
+            {/* <figure className="w-182 h-281 w-md-270 h-md-400  custom-brad-1">
               <img
                 className="w-100 h-100 custom-brad-1"
                 src={model}
                 alt="girl wearing a necklace"
               ></img>
-            </figure>
+            </figure> */}
+
+            <Frame
+              img={model}
+              classes="w-xxl-520 h-xxl-762 bord-l"
+              borderStyle="custom-brad-1"
+            />
           </div>
           <div className="col-xxl">
             <ProductCardGroup cardData={cardDataTwo} />

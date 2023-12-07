@@ -5,6 +5,7 @@ import ringsEarrings from "../../assets/rings_earrings.png";
 import pendantOne from "../../assets/pendant_1.png";
 
 import Card from "../Card";
+import Frame from "../Frame";
 
 const cardData = [
   {
@@ -39,13 +40,11 @@ const AboutUs = () => {
         </h2>
         <div className="row g-5 ">
           <div className="col-xxl d-flex justify-content-center justify-content-xxl-start">
-            <figure className="w-182 h-281 w-md-270 h-md-400 w-xl-344 h-xl-476 px-2 py-3 px-md-3 py-md-4 px-xl-17 py-xl-27 bord custom-brad-1">
-              <img
-                className="w-100 h-100 custom-brad-1"
-                src={necklaceTwo}
-                alt="girl wearing a necklace"
-              ></img>
-            </figure>
+            <Frame
+              img={necklaceTwo}
+              classes="w-xl-344 h-xl-476 px-2 py-3 px-md-3 py-md-4 px-xl-17 py-xl-27 bord"
+              borderStyle="custom-brad-1"
+            />
           </div>
           <div className="col-xxl d-flex justify-content-center align-items-center">
             <div className="custom-col d-flex justify-content-center align-items-end px-5 py-4">
@@ -59,13 +58,11 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="col-xxl d-flex justify-content-center justify-content-xxl-end">
-            <figure className="w-182 h-281 w-md-270 h-md-400 w-xl-344 h-xl-476 px-2 py-3 px-md-3 py-md-4 px-xl-17 py-xl-27 bord custom-brad-2 ">
-              <img
-                className="w-100 h-100 of-cover custom-brad-2"
-                src={necklaceOne}
-                alt="girl wearing a necklace"
-              ></img>
-            </figure>
+            <Frame
+              img={necklaceOne}
+              classes="w-xl-344 h-xl-476 px-2 py-3 px-md-3 py-md-4 px-xl-17 py-xl-27 bord"
+              borderStyle="custom-brad-2"
+            />
           </div>
         </div>
       </div>
