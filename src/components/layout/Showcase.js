@@ -11,7 +11,6 @@ const modelVariants = {
   },
 };
 
-
 const Showcase = () => {
   return (
     <section className="showcase">
@@ -44,7 +43,6 @@ const Showcase = () => {
           <div className="bgd-hero position-center"></div>
         </div>
       </motion.div>
-
     </section>
   );
 };

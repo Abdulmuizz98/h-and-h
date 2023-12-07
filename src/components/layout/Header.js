@@ -120,7 +120,6 @@ const Header = () => {
           </motion.ul>
         </motion.div>
       </motion.div>
-
     </nav>
   );
 };
