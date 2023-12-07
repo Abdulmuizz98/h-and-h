@@ -46,14 +46,6 @@ const Category = () => {
             <ProductCardGroup cardData={cardDataOne} />
           </div>
           <div className="col-xxl d-flex justify-content-center justify-content-xxl-center">
-            {/* <figure className="w-182 h-281 w-md-270 h-md-400  custom-brad-1">
-              <img
-                className="w-100 h-100 custom-brad-1"
-                src={model}
-                alt="girl wearing a necklace"
-              ></img>
-            </figure> */}
-
             <Frame
               img={model}
               classes="w-xxl-520 h-xxl-762 bord-l"

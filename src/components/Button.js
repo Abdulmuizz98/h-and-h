@@ -25,6 +25,7 @@ const Button = ({ value, classes }) => {
       {value}
     </motion.button>
   );
+
 };
 
 export default Button;

@@ -90,7 +90,6 @@ const Header = () => {
             </li>
           </ul>
         </div>
-
         <motion.div
           className="nav-menu-sm d-lg-none position-absolute end-0 px-2 py-50 w-150 top-0 bg-custom-secondary"
           variants={menuVariants}
@@ -121,6 +120,7 @@ const Header = () => {
           </motion.ul>
         </motion.div>
       </motion.div>
+
     </nav>
   );
 };
