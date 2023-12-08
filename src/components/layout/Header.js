@@ -62,7 +62,7 @@ const Header = () => {
         initial={false}
         animate={isOpen ? "open" : "closed"}
       >
-        <a href="/" className="ff-serif fs-sm-4 fs-md-3 fs-xl-4 fw-bold">
+        <a href="/" className="ff-serif fs-sm-4 fs-md-3 fw-bold">
           H&H Jewels
         </a>
         <motion.button
@@ -75,7 +75,7 @@ const Header = () => {
         </motion.button>
 
         <div className="nav-menu-lg ms-auto d-none d-lg-block">
-          <ul className="nav-links d-flex custom-gap justify-content-bentween list-unstyled rm-mb fw-300 fs-sm-5">
+          <ul className="nav-links d-flex custom-gap justify-content-bentween list-unstyled rm-mb fw-300 fs-sm-4">
             <li>
               <a href="#home">Home</a>
             </li>
