@@ -8,10 +8,10 @@ import Showcase from "./components/layout/Showcase";
 const App = () => {
   return (
     <>
-      <section id="home" className="home-section h-full custom-bg">
+      <div id="home" className="home-section h-full custom-bg">
         <Header />
         <Showcase />
-      </section>
+      </div>
       <AboutUs />
       <Category />
       <ContactUs />

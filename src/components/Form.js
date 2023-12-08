@@ -67,20 +67,20 @@ const Form = () => {
 
   return (
     <form
-      className="form w-100 w-md-465 w-xxl-490 mx-auto mx-xxl-0 "
+      className="form w-100 w-md-465 w-xl-490 mx-auto mx-xl-0 "
       onSubmit={handleSubmit}
     >
       <ToastContainer />
       <div className="w-100">
         <p
-          className="fw-300 fs-sm-3 fs-md-2 fs-xl-2 text-center"
+          className="fw-300 fs-sm-3 fs-md-2 fs-xl-1 text-center"
           id="custom-align"
         >
           Have any questions? Just leave us a message and we will get back to
           you as soon as possible.
         </p>
       </div>
-      <div className="mt-5 fw-light fs-xl-2 w-md-465 mx-auto mx-xxl-0">
+      <div className="mt-5 mt-xl-4  fw-light fs-xl-1 w-md-465 mx-auto mx-xl-0">
         <label className="d-block" htmlFor="name">
           Name
         </label>
@@ -91,7 +91,7 @@ const Form = () => {
           onChange={(e) => setName(e.target.value)}
         ></input>
       </div>
-      <div className="mt-5 fw-light fs-xl-2 w-md-465 mx-auto mx-xxl-0">
+      <div className="mt-5  mt-xl-4 fw-light fs-xl-1 w-md-465 mx-auto mx-xl-0">
         <label className="d-block" htmlFor="email">
           E-mail
         </label>
@@ -102,7 +102,7 @@ const Form = () => {
           onChange={(e) => setEmail(e.target.value)}
         ></input>
       </div>
-      <div className="mt-5 fw-light fs-xl-2 w-md-465 mx-auto mx-xxl-0">
+      <div className="mt-5  mt-xl-4 fw-light fs-xl-1 w-md-465 mx-auto mx-xl-0">
         <label className="d-block" htmlFor="message">
           Message
         </label>
@@ -114,7 +114,7 @@ const Form = () => {
       </div>
       <Button
         value="Submit"
-        classes="fs-sm-1 fs-md-1 fs-xl-2 d-block mx-auto"
+        classes="fs-sm-1 fs-md-1 fs-xl-1 d-block mx-auto"
       />
     </form>
   );
