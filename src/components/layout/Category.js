@@ -10,12 +10,12 @@ import Frame from "../Frame";
 
 const cardDataOne = [
   {
-    classes: "justify-content-xl-start mb-5",
+    classes: "mb-5",
     src: ringOne,
     title: "Ring",
   },
   {
-    classes: "justify-content-xl-start align-items-xxl-end",
+    classes: "",
     src: bangles,
     title: "Bracelet",
   },
@@ -23,12 +23,12 @@ const cardDataOne = [
 
 const cardDataTwo = [
   {
-    classes: "justify-content-xl-end mb-5",
+    classes: "mb-5",
     src: earringsOne,
     title: "Earrings",
   },
   {
-    classes: "justify-content-xl-end align-items-xxl-end",
+    classes: "",
     src: fullSet,
     title: "Necklace",
   },
@@ -41,8 +41,8 @@ const Category = () => {
         <h2 className="mt-50 mt-md-100 mb-5 ff-serif fw-bold fs-sm-5 fs-md-4 fs-xl-6 text-center">
           Category
         </h2>
-        <div className="row gy-5 h-xl-776">
-          <div className="col-xl">
+        <div className="row  gy-5 h-xl-776">
+          <div className="col-xl d-flex justify-content-center justify-content-xl-start">
             <ProductCardGroup cardData={cardDataOne} />
           </div>
           <div className="col-xl d-flex justify-content-center justify-content-xl-center">
@@ -52,7 +52,7 @@ const Category = () => {
               borderStyle="custom-brad-1"
             />
           </div>
-          <div className="col-xl">
+          <div className="col-xl d-flex justify-content-center justify-content-xl-end">
             <ProductCardGroup cardData={cardDataTwo} />
           </div>
         </div>
